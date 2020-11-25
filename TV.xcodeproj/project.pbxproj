@@ -18,7 +18,6 @@
 
 /* Begin PBXFileReference section */
 		00A27314256F10E200C4085D /* VideoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStore.swift; sourceTree = "<group>"; };
-		00A27317256F120700C4085D /* TV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TV.entitlements; sourceTree = "<group>"; };
 		00B4D274256EEA6000F12AB8 /* TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B4D277256EEA6000F12AB8 /* TVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVApp.swift; sourceTree = "<group>"; };
 		00B4D279256EEA6000F12AB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		00B4D276256EEA6000F12AB8 /* TV */ = {
 			isa = PBXGroup;
 			children = (
-				00A27317256F120700C4085D /* TV.entitlements */,
 				00B4D277256EEA6000F12AB8 /* TVApp.swift */,
 				00B4D279256EEA6000F12AB8 /* ContentView.swift */,
 				00B4D27B256EEA6200F12AB8 /* Assets.xcassets */,
