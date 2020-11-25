@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Later",
+        "repositoryURL": "https://github.com/0xLeif/Later",
+        "state": {
+          "branch": null,
+          "revision": "3ec8bc9dac95a5c4927dcc36b0c1cfbb540e6cbb",
+          "version": "0.4.1"
+        }
+      },
+      {
+        "package": "Object",
+        "repositoryURL": "https://github.com/0xLeif/Object",
+        "state": {
+          "branch": null,
+          "revision": "5fba97d125a556223b6937fba7a3397ad8709981",
+          "version": "0.5.0"
+        }
+      },
+      {
+        "package": "SURL",
+        "repositoryURL": "https://github.com/0xLeif/SURL",
+        "state": {
+          "branch": null,
+          "revision": "2ad0e8a6b097334e9317b7e6ec94c701d946861f",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "swift-nio",
+        "repositoryURL": "https://github.com/apple/swift-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "2f9ea477387806a79a8951524ef2d40de917a0e1",
+          "version": "2.24.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

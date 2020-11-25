@@ -3,17 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00A27315256F10E200C4085D /* VideoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A27314256F10E200C4085D /* VideoStore.swift */; };
 		00B4D278256EEA6000F12AB8 /* TVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4D277256EEA6000F12AB8 /* TVApp.swift */; };
 		00B4D27A256EEA6000F12AB8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4D279256EEA6000F12AB8 /* ContentView.swift */; };
 		00B4D27C256EEA6200F12AB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B4D27B256EEA6200F12AB8 /* Assets.xcassets */; };
 		00B4D27F256EEA6200F12AB8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B4D27E256EEA6200F12AB8 /* Preview Assets.xcassets */; };
+		00B4D289256EEE2B00F12AB8 /* SURL in Frameworks */ = {isa = PBXBuildFile; productRef = 00B4D288256EEE2B00F12AB8 /* SURL */; };
+		00B4D28D256EEE9E00F12AB8 /* Object in Frameworks */ = {isa = PBXBuildFile; productRef = 00B4D28C256EEE9E00F12AB8 /* Object */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00A27314256F10E200C4085D /* VideoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStore.swift; sourceTree = "<group>"; };
+		00A27317256F120700C4085D /* TV.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TV.entitlements; sourceTree = "<group>"; };
 		00B4D274256EEA6000F12AB8 /* TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B4D277256EEA6000F12AB8 /* TVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVApp.swift; sourceTree = "<group>"; };
 		00B4D279256EEA6000F12AB8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B4D289256EEE2B00F12AB8 /* SURL in Frameworks */,
+				00B4D28D256EEE9E00F12AB8 /* Object in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +59,13 @@
 		00B4D276256EEA6000F12AB8 /* TV */ = {
 			isa = PBXGroup;
 			children = (
+				00A27317256F120700C4085D /* TV.entitlements */,
 				00B4D277256EEA6000F12AB8 /* TVApp.swift */,
 				00B4D279256EEA6000F12AB8 /* ContentView.swift */,
 				00B4D27B256EEA6200F12AB8 /* Assets.xcassets */,
 				00B4D280256EEA6200F12AB8 /* Info.plist */,
 				00B4D27D256EEA6200F12AB8 /* Preview Content */,
+				00A27314256F10E200C4085D /* VideoStore.swift */,
 			);
 			path = TV;
 			sourceTree = "<group>";
@@ -85,6 +94,10 @@
 			dependencies = (
 			);
 			name = TV;
+			packageProductDependencies = (
+				00B4D288256EEE2B00F12AB8 /* SURL */,
+				00B4D28C256EEE9E00F12AB8 /* Object */,
+			);
 			productName = TV;
 			productReference = 00B4D274256EEA6000F12AB8 /* TV.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +125,10 @@
 				Base,
 			);
 			mainGroup = 00B4D26B256EEA6000F12AB8;
+			packageReferences = (
+				00B4D287256EEE2B00F12AB8 /* XCRemoteSwiftPackageReference "SURL" */,
+				00B4D28B256EEE9E00F12AB8 /* XCRemoteSwiftPackageReference "Object" */,
+			);
 			productRefGroup = 00B4D275256EEA6000F12AB8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +157,7 @@
 			files = (
 				00B4D27A256EEA6000F12AB8 /* ContentView.swift in Sources */,
 				00B4D278256EEA6000F12AB8 /* TVApp.swift in Sources */,
+				00A27315256F10E200C4085D /* VideoStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,9 +285,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TV/TV.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TV/Preview Content\"";
-				DEVELOPMENT_TEAM = 234Z7G6S62;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TV/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -277,8 +296,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = FNO.TV;
+				PRODUCT_BUNDLE_IDENTIFIER = open.leif.TV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,9 +309,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TV/TV.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TV/Preview Content\"";
-				DEVELOPMENT_TEAM = 234Z7G6S62;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TV/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -299,8 +320,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = FNO.TV;
+				PRODUCT_BUNDLE_IDENTIFIER = open.leif.TV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -328,6 +350,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00B4D287256EEE2B00F12AB8 /* XCRemoteSwiftPackageReference "SURL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/SURL";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		00B4D28B256EEE9E00F12AB8 /* XCRemoteSwiftPackageReference "Object" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/Object";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00B4D288256EEE2B00F12AB8 /* SURL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00B4D287256EEE2B00F12AB8 /* XCRemoteSwiftPackageReference "SURL" */;
+			productName = SURL;
+		};
+		00B4D28C256EEE9E00F12AB8 /* Object */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00B4D28B256EEE9E00F12AB8 /* XCRemoteSwiftPackageReference "Object" */;
+			productName = Object;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00B4D26C256EEA6000F12AB8 /* Project object */;
 }

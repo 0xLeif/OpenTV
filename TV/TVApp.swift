@@ -2,7 +2,7 @@
 //  TVApp.swift
 //  TV
 //
-//  Created by CRi on 11/25/20.
+//  Created by Zach Eriksen on 11/25/20.
 //
 
 import SwiftUI
@@ -11,7 +11,9 @@ import SwiftUI
 struct TVApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
         }
     }
 }
